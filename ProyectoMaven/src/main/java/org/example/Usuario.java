@@ -52,7 +52,6 @@ public class Usuario {
 
     public boolean validarCorreo() {
         if (correo == null) return false;
-        // CORRECCIÓN: Quitamos los espacios obligatorios de la regex
         return correo.matches(".+@.+\\..+");
     }
 
